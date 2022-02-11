@@ -1,0 +1,126 @@
+body{
+    padding: 0;
+    overflow-x: hidden;
+    background: #f7f7f7;
+}
+
+*{
+    margin: 0;
+
+}
+
+.swiper-slide {
+   padding-top: 35px;
+   padding-bottom: 45px;
+   padding-left: 50px;
+  }
+
+
+  .img_box{
+    height: calc(100vh - 70px);
+    width: 60%;
+  }
+
+  img{
+      height: 100%;
+  }
+
+  .right_block{
+      width: 40%;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 50px;
+      
+  }
+
+  .swiper{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+  }
+
+  h6{
+      font-size: 18px;
+  }
+
+  p{
+      color: grey;
+      margin-top: 20px;
+  }
+
+  .caption_and_arrows{
+      margin-right: 0;
+      width: 35%;
+  }
+
+  .close_pop_up{
+      border: none;
+      background: transparent;
+      font-size: 30px;
+      cursor: pointer !important;
+      border: 1px solid red;
+  }
+ 
+
+  .button_container{
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 50px;
+      
+      
+  }
+
+  .text{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      /* border: 1px solid red; */
+      height: calc(100vh - 150px);
+  }
+
+
+  .arrows{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+      align-items: center;
+      height: 50px;
+
+  }
+  .swiper-button-prev, .swiper-button-next{
+      position: static;
+  }
+
+  .swiper-button-next::after {
+    display: none;
+  }
+
+  .swiper-button-prev::after {
+    display: none;
+  }
+
+  .swiper-button-next {
+    background-image: url(./media/right.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    margin-top: 15px;
+    background-position: center;
+  }
+
+  .swiper-button-prev {
+    background-image: url(./media/left.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    margin-top: 15px;
+  }
+
+
+ .counter p {
+     color: black;
+ }
+
