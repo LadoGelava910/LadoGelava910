@@ -1,7 +1,7 @@
 body{
     padding: 0;
     overflow-x: hidden;
-    background: #f7f7f7;
+    background: #fffdfd;
 }
 
 *{
@@ -9,106 +9,78 @@ body{
 
 }
 
-.swiper-slide {
-   padding-top: 35px;
-   padding-bottom: 45px;
-   padding-left: 50px;
-  }
+.swiper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.swiper-wrapper{
+    /* width: 70% !important; */
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.img_box{
+    width: 100%;
+}
+
+img{
+    width: 82%;
+    height: 100vh;
+    max-width: 1500px !important;
+}
+
+.right_block{
+    width: 18%;
+    /* border: 1px solid red; */
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-right: 30px;
+    padding-top: 55px;
+    background: #f7f7f7;
+    height: 100vh;
+    padding-left: 53px;
+    min-width: 300px !important;
+}
+
+.close_pop_up{
+    background-color: transparent;
+    border: none;
+    font-size: 32px;
+}
+
+.button_container{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.close_pop_up img{
+    width: 50px;
+    height: auto;
+    cursor: pointer !important;
+    z-index: 1000;
+    position: absolute;
+    right: 30px;
+    top: 55px;
+}
 
 
-  .img_box{
-    height: calc(100vh - 70px);
-    width: 60%;
-  }
-
-  img{
-      height: 100%;
-  }
-
-  .right_block{
-      width: 40%;
-      height: 100vh;
-      position: absolute;
-      top: 0;
-      right: 0;
-      display: flex;
-      justify-content: flex-end;
-      padding-right: 50px;
-      
-  }
-
-  .swiper{
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-  }
-
-  h6{
-      font-size: 18px;
-  }
-
-  p{
-      color: grey;
-      margin-top: 20px;
-  }
-
-  .caption_and_arrows{
-      margin-right: 0;
-      width: 35%;
-  }
-
-  .close_pop_up{
-      border: none;
-      background: transparent;
-      font-size: 30px;
-      cursor: pointer !important;
-      border: 1px solid red;
-  }
- 
-
-  .button_container{
-      display: flex;
-      justify-content: flex-end;
-      margin-top: 50px;
-      
-      
-  }
-
-  .text{
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      /* border: 1px solid red; */
-      height: calc(100vh - 150px);
-  }
-
-
-  .arrows{
-      display: flex;
-      justify-content: space-between;
-      margin-top: 30px;
-      align-items: center;
-      height: 50px;
-
-  }
-  .swiper-button-prev, .swiper-button-next{
-      position: static;
-  }
-
-  .swiper-button-next::after {
-    display: none;
-  }
-
-  .swiper-button-prev::after {
-    display: none;
-  }
-
-  .swiper-button-next {
+.swiper-button-next {
     background-image: url(./media/right.png);
     background-repeat: no-repeat;
     background-size: 100% auto;
-    margin-top: 15px;
     background-position: center;
+    position: static;
+  }
+  
+  .swiper-button-next::after {
+    display: none;
   }
 
   .swiper-button-prev {
@@ -116,11 +88,78 @@ body{
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center;
-    margin-top: 15px;
+    position: static;
+    
+    
+  }
+  
+  .swiper-button-prev::after {
+    display: none;
   }
 
 
- .counter p {
-     color: black;
- }
+  .text h6{
+    /* margin-left: 35px; */
+    font-size: 16px;
+  }
 
+  .text p{
+      margin-top: 30px;
+  }
+
+  .text{
+      margin-top: calc(100vh - 400px);
+      width: 100% 
+  }
+  .arrows{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 50px;
+  }
+
+  .counter{
+      margin-top: -50px;
+      
+  }
+
+  .counter p{
+      color: black;
+  }
+
+  .container h1{
+      color: white;
+      font-size: 62px;
+      text-align: center;
+  }
+
+  .container{
+      position: absolute;
+      top: 50px;
+      right: 0;
+      width: 100%;
+  }
+
+  .caption_and_arrows{
+      width: 100%;
+  }
+
+  #container2 h1{
+    color: black;
+    z-index: 1700;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .container2{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    color: black;
+    border: 1px solid red;
+    z-index: 5000;
+    height: 100px;
+}

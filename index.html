@@ -14,9 +14,9 @@
 </head>
 <body>
     <!-- Slider main container -->
-<div class="swiper" id="swiper">
+<div class="swiper">
     <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
+    <div class="swiper-wrapper"  id="swiper_wrapper">
       <!-- Slides -->
       <div class="swiper-slide">
           <div class="img_box">
@@ -31,12 +31,15 @@
     </div>
     <!-- If we need pagination -->
     <!-- <div class="swiper-pagination"></div> -->
-    <div class="right_block">
+    <div class="right_block" id="right_block">
         <div class="caption_and_arrows">
           <div class="button_container">
             <button class="close_pop_up" id="button_close">
                <img src="./media/close.png" alt="Squarespace">
             </button>
+          </div>
+          <div class="container">
+            <h1></h1>
           </div>
           <div class="text">
             <h6>IMAGE TITLE</h6>
@@ -44,20 +47,22 @@
              <div class="arrows"> 
               <div class="swiper-button-prev"></div>
             
-              <div class="counter">  <p>4/17</p></div>
+              <div class="counter"><p>4/17</p></div>
               <div class="swiper-button-next"></div>
             </div>
             </div>
-           
-       
          </div>
     </div>
+
     <!-- If we need navigation buttons -->
     
   
     <!-- If we need scrollbar -->
     <!-- <div class="swiper-scrollbar"></div> -->
   </div>
+  
+ 
+  
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
